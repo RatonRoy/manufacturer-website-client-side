@@ -7,4 +7,6 @@
 * Using firebase for  authentication 
 * Using React Firebase Hooks for simplicity
 * Using  Tailwind CSS  
-* I used  daisyUI components have low CSS specificity and  customize everything using Tailwind CSS utility classes. 
+* I used  daisyUI components for CSS specificity and  customize everything using Tailwind CSS utility classes. 
+* Using the react-icons 
+
