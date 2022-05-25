@@ -16,7 +16,7 @@ const NotFound = () => {
 					<p class="mb-5">
 					  You are trying to searching something else that not remaining in this website. 
 					</p>
-					<Link to= '/' class="btn btn-primary"> Go Back </Link>
+					<Link to= '/' class="btn btn-primary px-8"> Go Back </Link>
 				</div>
 			</div>
 		</div>
