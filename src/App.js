@@ -7,6 +7,7 @@ import About from './components/Pages/About/About';
 import Login from './components/Pages/Login/Login';
 
 import Singup from './components/Pages/Singup/Singup';
+import NotFound from './components/Pages/NotFound/NotFound';
 
 
 
@@ -19,7 +20,9 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about' element = {<About></About>}></Route>
         <Route path='/login' element = {<Login></Login>}></Route>
-        <Route path='/signup' element = {<Singup></Singup>}></Route>
+        <Route path='/signup' element={<Singup></Singup>}></Route>
+        <Route path  = '*' element={<NotFound></NotFound>}></Route>
+        
        
       
       </Routes>
