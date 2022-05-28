@@ -1,56 +1,29 @@
 [
 	{
-		"_id": 1,
 		"name": "Case",
 		"quantity": 500,
 		"price": 6000,
-		"min-order": 10,
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eligendi mollitia, eaque tempore, nostrum perferendis quis quidem iure repudiandae vitae voluptate quam quos ex unde impedit",
-		"img": "https://i.ibb.co/qj9d0y7/cpu.jpg"
+		"minOrder": 10,
+		"description": "This casing is very good for budget builds considering the price and factor quality. this budget friendly casing supports ATX, Micro-ATX, Mini-ITX type Motherboards. This casing comes with Two Front USB 2.0 Ports.",
+		"Details": "This casing comes with Two Front USB 2.0 Ports. Apart from the USB ports it has one 3.5 mm Audio port and one Microphone port as I/O Ports. It has total of 7 Expansion Slots. This casing can host one 5.25 Inch HDD Drive Bay , Two 3.5 inch HDD Drive Bay  and Three 2.5 inch SSD Driver Bays. Apart from the Expansion slots this Casing comes with a 200 w built-in standard PSU. Steel used as a base Material for this casing body and the USB ports upwards. The Casing also hosts a glazing front panel. But what really makes it stand out is the distinctive red colored triangular shaped power button..The dimension of this casing is 410 x 176 x 370mm. ",
+		"img": "https://i.ibb.co/qxrbC6q/cpu.jpg"
 	},
 	{
-		"_id": 2,
-		"name": "CPU",
-		"quantity": 500,
-		"price": 8000,
-		"minOrder": 5,
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eligendi mollitia, eaque tempore, nostrum perferendis quis quidem iure repudiandae vitae voluptate quam quos ex unde impedit.",
-		"img": "https://i.ibb.co/0ZnBG3Q/cpu.jpg"
-	},
-	{
-		"_id": 3,
-		"name": "Hard Disk",
+		"name": "Mouse",
 		"quantity": 500,
 		"price": 3000,
 		"minOrder": 20,
-		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eligendi mollitia, eaque tempore, nostrum perferendis quis quidem iure repudiandae vitae voluptate quam quos ex unde impedit",
-		"img": "https://i.ibb.co/tmhnCPD/hard-disk.jpg"
+		"description": "LIGHTWEIGHT FORM, HEAVYWEIGHT FUNCTION, The perfect bang-for buck gaming mouse featuring a gaming grade optical sensor and with DPI adjustable up to 6000 DPI, with two side buttons in an ergonomic.",
+		"Details": " It features a comfortable contoured design that follows the natural curve of medium to large hands. With you can work wirelessly. It can operate within 10 meters. It comes with a AA battery and has a battery life of 18 months. It has High Precision Optical Tracking Sensor technology with 1000 dpi resolution. It features 3 buttons and a Line-by-Line Precision Scroll wheel which lets you navigate more easily. Logitech Nano Receiver Wireless technology has been used in this mouse. It supports plug and play, just plug in the USB receiver and you’re good to go. It comes with a 1-year warranty.",
+		"img": "https://i.ibb.co/5LSD0wn/mouse.jpg"
 	},
 	{
-		"_id": 4,
-		"name": "keybord",
+		"name": "Monitor",
 		"quantity": 500,
-		"price": 1000,
+		"price": 4000,
 		"minOrder": 50,
-		"description": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eligendi mollitia, eaque tempore, nostrum perferendis quis quidem iure repudiandae vitae voluptate quam quos ex unde impedit.",
-		"img": "https://i.ibb.co/0jhhfgg/keybord.jpg"
-	},
-	{
-		"_id": 5,
-		"name": "Mouse",
-		"quantity": 500,
-		"price": 500,
-		"minOrder": 100,
-		"description": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eligendi mollitia, eaque tempore, nostrum perferendis quis quidem iure repudiandae vitae voluptate quam quos ex unde impedit.",
-		"img": "https://i.ibb.co/C9Pf5rp/mouse.jpg"
-	},
-	{
-		"_id": 6,
-		"name": "RAM",
-		"quantity": 500,
-		"price": 2000,
-		"minOrder": 40,
-		"description": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eligendi mollitia, eaque tempore, nostrum perferendis quis quidem iure repudiandae vitae voluptate quam quos ex unde impedit.",
-		"img": "https://i.ibb.co/XDJxmLr/RAM.webp"
+		"description": "Reduce Screen Tearing With AMD's FreeSync Premium Technology. FreeSync Enables The Monitor To Dynamically Adjust Its Refresh Rate To The Frame Rate Being Output By The Graphics Card, Thereby Greatly Reducing Screen Tearing, Stuttering.",
+		"Details": "Slim, energy-saving, compact 18.5-inch LED display, 12.6 mm narrow frame, simple and low-key hairline texture design body. The 20000000:1 (DCR) ultra-high dynamic contrast ensures that many darker image details can be displayed. e-Saver software reduces power consumption. Support for HDMI high-quality input interface allows you to enjoy the contents of other electronic devices on the AOC display. Korea than technology, highest contrast using DCR (Dynamic Contrast Ratio) amounted to 20 million: 1, make the picture details sharper, more vivid outline, more distinct levels. Mercury is toxic and can cause toxic substances to pollute the environment. Unlike traditional CCFL backlights, this LED- backlit screen features a mercury-free green panel. Compared with the traditional 4CCFL screen, it can achieve up to 50% energy saving. e-Saver software can automatically determine the operating status of the computer (screen protection / shutdown / sleep), users can set the display shutdown time according to demand, in order to achieve energy saving and extend the life of the display. Designed with a unique hairline texture to provide a more elegant and elegant texture. Screen+ software is a tool that cuts the desktop screen. It splits your desktop into different windows and allows each window to display different execution images. Simply drag the displayed application to a blank split window and you can use it directly. This software function allows your desktop to display multiple windows at the same time and perform different tasks.",
+		"img": "https://i.ibb.co/6bScJZr/monitor.jpg"
 	}
 ]
