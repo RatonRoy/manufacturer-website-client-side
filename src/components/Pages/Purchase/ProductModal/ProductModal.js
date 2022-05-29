@@ -33,15 +33,9 @@ const ProductModal = ({ product, setProduct }) => {
 		})
 			.then(res => res.json())
 			.then(data => {
-				/* if (data.success) {
-					toast(`Appointment is set`)
-				} */
+
 				toast('order place');
-				// setProduct(null);
-				/*  else{
-					 toast.error(`Already have and appointment on ${data.booking?.date} at ${data.booking?.slot}`)
-				 }
-				 setTreatment(null); */
+
 			});
 	}
 

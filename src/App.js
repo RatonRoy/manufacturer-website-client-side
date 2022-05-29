@@ -22,6 +22,7 @@ import Dashboard from './components/Pages/Dashboard/Dashboard';
 import MyProfile from './components/Pages/Dashboard/MyProfile';
 import MyOrder from './components/Pages/Dashboard/MyOrder';
 import AddReview from './components/Pages/Dashboard/AddReview';
+import Users from './components/Pages/Dashboard/Users';
 
 
 function App() {
@@ -32,7 +33,14 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
 
-        <Route path='/product' element={<Products></Products>}></Route>
+        <Route path='/product' element={
+
+          <RequireAuth>
+            <Products></Products>
+          </RequireAuth>
+
+
+        }></Route>
 
         <Route path='/product/:productId' element={
 
@@ -46,6 +54,9 @@ function App() {
           <Route index element={<MyProfile></MyProfile>}></Route>
           <Route path="order" element={<MyOrder></MyOrder>}></Route>
           <Route path="review" element={<AddReview></AddReview>}></Route>
+
+          <Route path="users" element={<Users></Users>}></Route>
+          
         </Route>
 
         <Route path='/about' element={<About></About>}></Route>

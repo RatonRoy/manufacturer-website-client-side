@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
+import useToken from '../../Hooks/useToken';
 
 const Singup = () => {
 	const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -22,25 +23,26 @@ const Singup = () => {
 	const navigate = useNavigate();
 	const location = useLocation();
 	let from = location.state?.from?.pathname || "/";
-  
-  
-	useEffect( () =>{
-	  if (user || gUser) {
-		  navigate(from, { replace: true });
-	  }
-	}, [user, gUser, from, navigate])
+
+	const [token] = useToken(user || gUser);
+	
   
   if (loading || gLoading || updating) {
 	  return <Loading></Loading>
   }
   if(error || gError || updateError){
 	  signUpError= <p className='text-red-500'><small>{error?.message || gError?.message }</small></p>
-  }
+	}
+	
 	const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);
         await updateProfile({ displayName: data.name });
-		navigate('/');
+		navigate(from, { replace: true });
        
+	}
+
+	if (token) {
+        navigate('/');
     }
 	return (
 		<div className='flex justify-center items-center min-h-screen'>
