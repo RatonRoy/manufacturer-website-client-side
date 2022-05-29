@@ -23,6 +23,7 @@ import MyProfile from './components/Pages/Dashboard/MyProfile';
 import MyOrder from './components/Pages/Dashboard/MyOrder';
 import AddReview from './components/Pages/Dashboard/AddReview';
 import Users from './components/Pages/Dashboard/Users';
+import RequireAdmin from './components/Pages/Login/RequireAdmin';
 
 
 function App() {
@@ -55,7 +56,7 @@ function App() {
           <Route path="order" element={<MyOrder></MyOrder>}></Route>
           <Route path="review" element={<AddReview></AddReview>}></Route>
 
-          <Route path="users" element={<Users></Users>}></Route>
+          <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
           
         </Route>
 
