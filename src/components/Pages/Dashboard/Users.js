@@ -4,9 +4,9 @@ import Loading from '../../Shared/Loading/Loading';
 import UserRow from './UserRow';
 
 const Users = () => {
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user', {
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('https://obscure-coast-57144.herokuapp.com/user', {
         method: 'GET',
-        headers:{
+        headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
     }).then(res => res.json()));
@@ -27,13 +27,13 @@ const Users = () => {
                         </tr>
                     </thead>
                     <tbody>
-                       {
-                           users.map(user=><UserRow
-                           key={user._id}
-                           user={user}
-                           refetch={refetch}
-                           ></UserRow>)
-                       }
+                        {
+                            users.map(user => <UserRow
+                                key={user._id}
+                                user={user}
+                                refetch={refetch}
+                            ></UserRow>)
+                        }
                     </tbody>
                 </table>
             </div>

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Products = () => {
 	const [Products, setProduct] = useState([]);
 	useEffect(() => {
-		fetch('http://localhost:5000/part')
+		fetch('https://obscure-coast-57144.herokuapp.com/part')
 			.then(res => res.json())
 			.then(data => setProduct(data))
 	}, [])
@@ -46,9 +46,9 @@ const Products = () => {
 								<div class="mt-3 flex sm:justify-center md:justify-start">
 
 									<button class="btn btn-primary w-1/2 block"
-									
+
 										onClick={() => handlePurchaseNavigation(product._id)}
-										
+
 									>Purchase</button>
 								</div>
 							</div>

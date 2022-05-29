@@ -60,23 +60,32 @@ const MyProtfolio = () => {
 
 				</div>
 				<div>
-					<h1 className='text-center text-2xl'>My Projects </h1>
-					<div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-4">
-						<div className="">
-							<h1> Project one </h1>
+					<h1 className='text-center text-2xl py-6'>My Projects </h1>
+					<div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-4 py-8">
+						<div className=" py-8">
+							<h1 className='text-2xl'> Group portfolio </h1>
+							<a href="https://ratonroy.github.io/Group-protfolio/"> 
+							https://ratonroy.github.io/Group-protfolio/
+							</a>
 						</div>
-						<div className="">
-							<h1> Project two  </h1>
+						<div className="py-8">
+							<h1 className='text-2xl'> Fruit Store </h1>
+							<a href="https://glistening-buttercream-7e6192.netlify.app/">
+							https://glistening-buttercream-7e6192.netlify.app/
+							</a>
 						</div>
-						<div className="">
-							<h1> Project three </h1>
+						<div className="py-8">
+							<h1 className='text-2xl'> Tutor-of-science </h1>
+							<a href="https://tutor-of-science.web.app/">
+							https://tutor-of-science.web.app/
+							</a>
 						</div>
 
 					</div>
 				</div>
 				<div className="">
 					<h1 className="text-2xl"> I know those technologies </h1>
-					<ul className='list-disc pl-4'>
+					<ul className='list-disc pl-4 flex'>
 						<li>HTML5 </li>
 						<li>Raw CSS </li>
 						<li> Javascript with ES6 </li>
