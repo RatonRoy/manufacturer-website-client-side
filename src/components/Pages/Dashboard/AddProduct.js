@@ -6,7 +6,7 @@ const AddProduct = () => {
 	const { register, handleSubmit } = useForm();
 	let navigate = useNavigate();
 	const onSubmit = data => {
-		const url = `http://localhost:5000/part`;
+		const url = `https://obscure-coast-57144.herokuapp.com/part`;
 		fetch((url), {
 			method: 'POST',
 			headers: {
@@ -17,7 +17,7 @@ const AddProduct = () => {
 			.then(res => res.json())
 			.then(result => console.log(result));
 
-		
+
 		navigate('/');
 	}
 	return (
@@ -36,8 +36,8 @@ const AddProduct = () => {
 				<input className='mb-3 p-1 input w-full max-w-xs input-bordered input-primary' placeholder='minOrder' type="text" {...register("minOrder")} />
 				<legend> Quantity </legend> <br />
 				<input className='mb-3 p-1 input w-full max-w-xs input-bordered input-primary' placeholder='Quantity ' type="number" {...register("quantity")} /> <br />
-				<input type="submit" value= 'Add Product' className='btn btn-primary input w-full max-w-xs'/>
-				
+				<input type="submit" value='Add Product' className='btn btn-primary input w-full max-w-xs' />
+
 			</form>
 		</div>
 	);

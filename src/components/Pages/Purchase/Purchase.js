@@ -13,7 +13,7 @@ const Purchase = () => {
 
 	useEffect(() => {
 
-		const url = `http://localhost:5000/part/${productId}`;
+		const url = `https://obscure-coast-57144.herokuapp.com/part/${productId}`;
 
 		fetch(url)
 			.then(res => res.json())
@@ -25,13 +25,13 @@ const Purchase = () => {
 	const minOrderValue = product.minOrder;
 	const maxOrderValue = product.quantity;
 
-	let order; 
+	let order;
 
 	const onSubmit = e => {
-		
+
 		e.preventDefault();
 		order = e.target.order.value;
-		
+
 	};
 
 
@@ -73,17 +73,17 @@ const Purchase = () => {
 					</label>
 					<input
 						type="number"
-						name = 'order'
+						name='order'
 						placeholder="Your Order"
-						class="input input-bordered w-full max-w-xs"	
+						class="input input-bordered w-full max-w-xs"
 					/>
 
-					
+
 				</div>
 
 				<input type="submit" value='Order' className='btn w-full max-w-xs btn-success'
-				disabled = {order === minOrderValue || maxOrderValue}
-				/> 
+					disabled={order === minOrderValue || maxOrderValue}
+				/>
 			</form>
 
 		</div>

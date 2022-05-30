@@ -19,7 +19,7 @@ const MyProfile = () => {
 			phone: e.target.phone.value,
 		}
 
-		fetch('http://localhost:5000/profile', {
+		fetch('https://obscure-coast-57144.herokuapp.com/profile', {
 			method: 'POST',
 			headers: {
 				'content-type': 'application/json'
@@ -43,7 +43,7 @@ const MyProfile = () => {
 				<h1 className='text-lg '> 	Email : {user?.email} </h1>
 			</div>
 			<form onSubmit={handleProfile}>
-				
+
 				<br />
 				<label className='py-3'> Give Linkedin id  </label> <br />
 

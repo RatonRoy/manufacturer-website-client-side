@@ -22,7 +22,7 @@ const ProductModal = ({ product, setProduct }) => {
 			address: e.target.address.value,
 		}
 
-		fetch('http://localhost:5000/order', {
+		fetch('https://obscure-coast-57144.herokuapp.com/order', {
 			method: 'POST',
 			headers: {
 				'content-type': 'application/json'
