@@ -12,7 +12,7 @@ const Purchase = () => {
 
 	useEffect(() => {
 
-		const url = `https://obscure-coast-57144.herokuapp.com/part/${productId}`;
+		const url = `http://localhost:5000/part/${productId}`;
 
 		fetch(url)
 			.then(res => res.json())

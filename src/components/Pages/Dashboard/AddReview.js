@@ -11,7 +11,7 @@ const AddReview = () => {
 			name: e.target.name.value,
 		}
 
-		fetch('https://obscure-coast-57144.herokuapp.com/review', {
+		fetch('http://localhost:5000/review', {
 			method: 'POST',
 			headers: {
 				'content-type': 'application/json'

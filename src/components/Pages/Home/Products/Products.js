@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Products = () => {
 	const [Products, setProduct] = useState([]);
 	useEffect(() => {
-		fetch('https://obscure-coast-57144.herokuapp.com/part')
+		fetch('http://localhost:5000/part')
 			.then(res => res.json())
 			.then(data => setProduct(data))
 	}, [])
