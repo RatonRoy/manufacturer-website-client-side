@@ -6,8 +6,6 @@ import auth from '../../../../firebase.init';
 
 const ProductModal = ({ product, setProduct }) => {
 	const [user, loading, error] = useAuthState(auth);
-	// const [orderP, setOrderP] = useState({});
-	// setOrderP(product);
 	const { _id, name, quantity, minOrder, price } = product;
 
 

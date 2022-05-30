@@ -5,9 +5,9 @@ import  './Contact.css'
 
 const Contact = () => {
 	return (
-		<section className='contact-container w-3/4 mx-auto'>
-				<h1 className="section-title contact-title">contact</h1>
-				<article className="section-center footer-info-container px-10">
+		<section className='contact-container'>
+				<h1 className="text-center text-3xl uppercase text-white py-8">contact</h1>
+				<article className="section-center footer-info-container w-3/4 mx-auto">
 					<div className="contact-text">
 					
 						<ul>
@@ -25,7 +25,7 @@ const Contact = () => {
 					</div>
 					<div className="contact-icon">
 						<h4 className='contact-icon-title'> Follow Us  </h4>
-						<div className="icons">
+						<div className="icons flex">
 							<a href="">
 							  <BsFacebook className = "icon"></BsFacebook>
 							</a>

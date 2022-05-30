@@ -29,11 +29,11 @@ const AddReview = () => {
 	return (
 		<div>
 			<form onSubmit={handlereview}>
-				<textarea name="description" id="" cols="30" rows="10" className="input input-bordered input-secondary w-full max-w-xs">
+				<textarea name="description" id="" cols="30" rows="10" className="input input-secondary w-full max-w-xs">
 
 				</textarea>
 				<br />
-				<label htmlFor=""> Rating within five </label> <br />
+				<label> Rating within five </label> <br />
 				<input type="text" placeholder="rating" className="input input-bordered input-secondary w-full max-w-xs" name='rating' />
 				<br />
 				<input type="text" placeholder="name" className="input input-bordered input-secondary w-full max-w-xs" name='name' />
