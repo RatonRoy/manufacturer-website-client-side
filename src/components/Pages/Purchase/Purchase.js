@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './Purchase.css'
-
 import ProductModal from './ProductModal/ProductModal';
+
 
 const Purchase = () => {
 
 	const { productId } = useParams();
+
 
 	const [product, setProduct] = useState({});
 
@@ -21,11 +22,17 @@ const Purchase = () => {
 			})
 	}, [])
 
+	const minOrderValue = product.minOrder;
+	const maxOrderValue = product.quantity;
 
-	const handleUpdatefruit = () => {
+	let order; 
 
-	}
-
+	const onSubmit = e => {
+		
+		e.preventDefault();
+		order = e.target.order.value;
+		
+	};
 
 
 	return (
@@ -55,6 +62,29 @@ const Purchase = () => {
 			<ProductModal product={product}
 				setProduct={setProduct}
 			></ProductModal>
+
+			<form onSubmit={onSubmit}>
+
+				<div class="form-control w-full max-w-xs">
+					<label class="label">
+
+						<span class="label-text"> Quantity   </span>
+
+					</label>
+					<input
+						type="number"
+						name = 'order'
+						placeholder="Your Order"
+						class="input input-bordered w-full max-w-xs"	
+					/>
+
+					
+				</div>
+
+				<input type="submit" value='Order' className='btn w-full max-w-xs btn-success'
+				disabled = {order === minOrderValue || maxOrderValue}
+				/> 
+			</form>
 
 		</div>
 	);
